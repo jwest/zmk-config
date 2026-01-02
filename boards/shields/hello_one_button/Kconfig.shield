@@ -1,0 +1,2 @@
+config SHIELD_HELLO_ONE_BUTTON
+    def_bool $(shields_list_contains,hello_one_button)

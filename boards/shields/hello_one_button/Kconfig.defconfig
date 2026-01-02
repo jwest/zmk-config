@@ -1,0 +1,6 @@
+if SHIELD_HELLO_ONE_BUTTON
+
+config ZMK_KEYBOARD_NAME
+    default "hello_one_button"
+
+endif # SHIELD_HELLO_ONE_BUTTON
