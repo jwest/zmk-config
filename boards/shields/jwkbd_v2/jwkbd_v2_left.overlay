@@ -4,7 +4,7 @@
 
 #include "jwkbd_v2.dtsi"
 
-&kscan {
+&kscan0 {
     row-gpios
         = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
