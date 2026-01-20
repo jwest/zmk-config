@@ -3,23 +3,16 @@
 // instructions.
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 #include "jwkbd_v1-layouts.dtsi"
-
 / {
     chosen {
-        zmk,physical-layout = &default_layout;
+        zmk,physical-layout = &physical_layout0;
     };
 
     kscan: kscan {
-        // If the hardware does not use a switch matrix, change this to the
-        // appropriate driver and update the properties below to match.
-        // See https://zmk.dev/docs/config/kscan for supported key scan drivers.
         compatible = "zmk,kscan-gpio-matrix";
-        // Set this to "col2row" or "row2col" to match the hardware. If using
-        // "row2col", change the col-gpios in the _left.overlay and _right.overlay
-        // files to (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) and the row-gpios here to
-        // GPIO_ACTIVE_HIGH.
         diode-direction = "col2row";
         wakeup-source;
 
@@ -34,8 +27,6 @@
     };
 
     default_transform: default_transform {
-        // See https://zmk.dev/docs/development/hardware-integration/new-shield#matrix-transform
-        // for how to configure this
         compatible = "zmk,matrix-transform";
         columns = <14>;
         rows = <4>;
@@ -46,5 +37,12 @@
             RC(2, 0) RC(2, 1) RC(2, 2) RC(2, 3) RC(2, 4)                                           RC(2, 9) RC(2, 10) RC(2, 11) RC(2, 12) RC(2, 13)
                                                 RC(3, 4) RC(3, 5) RC(3, 6)      RC(3, 7) RC(3, 8)  RC(3, 9)
         >;
+    };
+
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        kscan = <&kscan>;
+        transform = <&default_transform>;
     };
 };
