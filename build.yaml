@@ -20,6 +20,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: jwkbd_v2_left
+    shield: jwkbd_v1_left
   - board: seeeduino_xiao_ble
-    shield: jwkbd_v2_right
+    shield: jwkbd_v1_right
