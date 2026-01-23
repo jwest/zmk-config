@@ -22,28 +22,6 @@
             quick-tap-ms = <200>;
         };
     };
-    macros {
-        pl_a: pl_a {
-            compatible = "zmk,behavior-macro";
-            label = "PL_A";
-            bindings = <&kp A &kp S>;
-        };
-        pl_s: pl_s {
-            compatible = "zmk,behavior-macro";
-            label = "PL_S";
-            bindings = <&kp S &kp D>;
-        };
-        pl_z: pl_z {
-            compatible = "zmk,behavior-macro";
-            label = "PL_Z";
-            bindings = <&kp Z &kp X>;
-        };
-        pl_x: pl_x {
-            compatible = "zmk,behavior-macro";
-            label = "PL_X";
-            bindings = <&kp X &kp C>;
-        };
-    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -58,10 +36,10 @@
 
         numpad_sym {
             bindings = <
-    &kp EXCLAMATION  &kp CARET      &kp DOLLAR          &kp LEFT_BRACE  &kp RIGHT_BRACE     &kp KP_ASTERISK &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9    &kp PLUS
-    &hm LCTRL AT     &hm LALT PIPE  &hm LGUI AMPERSAND  &hm LSHFT LPAR  &kp RPAR            &kp SLASH       &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp MINUS
-    &kp PERCENT      &kp HASH       &kp ASTERISK        &kp LBKT        &kp RBKT            &kp NUMBER_0    &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp EQUAL
-                                    &trans              &kp UNDERSCORE  &kp GRAVE           &kp PIPE        &kp TILDE       &kp DOT
+    &kp EXCLAMATION  &kp CARET      &kp DOLLAR          &kp LEFT_BRACE  &kp RIGHT_BRACE     &kp KP_ASTERISK  &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9    &kp PLUS
+    &hm LCTRL AT     &hm LALT PIPE  &hm LGUI AMPERSAND  &hm LSHFT LPAR  &kp RPAR            &kp SLASH        &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp MINUS
+    &kp PERCENT      &kp HASH       &kp ASTERISK        &kp LBKT        &kp RBKT            &kp NUMBER_0     &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp EQUAL
+                                    &trans              &kp UNDERSCORE  &kp GRAVE           &kp PIPE         &kp TILDE       &kp DOT
             >;
         };
 
