@@ -85,9 +85,9 @@
 
         navigate {
             bindings = <
-    &none                    &none       &none          &none           &none           &none           &kp HOME              &kp PG_DOWN             &kp PG_UP                 &kp END
-    &hm LEFT_CONTROL ESCAPE  &kp LALT    &kp LEFT_GUI   &kp LEFT_SHIFT  &none           &kp ESCAPE      &hm RIGHT_SHIFT LEFT  &hm RIGHT_GUI DOWN      &hm RIGHT_ALT UP_ARROW    &hm RCTRL RIGHT
-    &kp LEFT_SHIFT           &kp DELETE  &none          &none           &none           &none           &none                 &none                   &none                     &none
+    &trans                   &trans      &trans         &trans          &trans          &trans          &kp HOME              &kp PG_DOWN             &kp PG_UP                 &kp END
+    &hm LEFT_CONTROL ESCAPE  &kp LALT    &kp LEFT_GUI   &kp LEFT_SHIFT  &trans          &kp ESCAPE      &hm RIGHT_SHIFT LEFT  &hm RIGHT_GUI DOWN      &hm RIGHT_ALT UP_ARROW    &hm RCTRL RIGHT
+    &kp LEFT_SHIFT           &kp DELETE  &trans         &trans          &trans          &trans          &trans                &trans                  &trans                    &trans
                                          &trans         &trans          &trans          &trans          &trans                &trans
             >;
         };
