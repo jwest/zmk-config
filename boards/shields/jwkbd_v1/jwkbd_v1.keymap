@@ -58,10 +58,10 @@
 
         numpad_sym {
             bindings = <
-    &kp EXCLAMATION  &kp CARET      &kp DOLLAR          &kp LEFT_BRACE              &kp RIGHT_BRACE          &kp ASTERISK   &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9    &kp PLUS
-    &hm LCTRL AT     &hm LALT PIPE  &hm LGUI AMPERSAND  &hm LSHFT LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp SLASH      &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp MINUS
-    &kp PERCENT      &kp HASH       &kp ASTERISK        &kp LEFT_BRACKET            &kp RBKT                 &kp NUMBER_0   &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp EQUAL
-                                    &trans              &kp UNDERSCORE              &kp GRAVE                &kp PIPE       &kp TILDE       &kp DOT
+    &kp EXCLAMATION  &kp CARET      &kp DOLLAR          &kp LEFT_BRACE  &kp RIGHT_BRACE     &kp KP_ASTERISK &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9    &kp PLUS
+    &hm LCTRL AT     &hm LALT PIPE  &hm LGUI AMPERSAND  &hm LSHFT LPAR  &kp RPAR            &kp SLASH       &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp MINUS
+    &kp PERCENT      &kp HASH       &kp ASTERISK        &kp LBKT        &kp RBKT            &kp NUMBER_0    &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp EQUAL
+                                    &trans              &kp UNDERSCORE  &kp GRAVE           &kp PIPE        &kp TILDE       &kp DOT
             >;
         };
 
