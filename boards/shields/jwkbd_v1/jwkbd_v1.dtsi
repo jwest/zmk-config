@@ -4,6 +4,12 @@
 / {
     chosen {
         zmk,physical-layout = &physical_layout0;
+        zmk,batches = <&wakeup_source>;
+    };
+
+    wakeup_source: wakeup_source {
+        compatible = "zmk,wakeup-source-gpio";
+        wakeup-gpios = <&gpio1 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 
     kscan: kscan {
