@@ -16,6 +16,12 @@
         combo_ss { key-positions = <11 12>; bindings = <&kp RA(S)>; }; // S + D = ś
         combo_zz { key-positions = <20 21>; bindings = <&kp RA(Z)>; }; // Z + X = ż
         combo_xx { key-positions = <21 22>; bindings = <&kp RA(X)>; }; // X + C = ź
+
+        combo_esc { key-positions = <0 1>; bindings = <&kp ESC>; }; // Q + W = ESC
+        combo_tab { key-positions = <1 2>; bindings = <&kp TAB>; }; // W + E = TAB
+
+        combo_qmark { key-positions = <27 28>; bindings = <&kp QUESTION>; }; // , + . = ?
+        combo_excl  { key-positions = <28 29>; bindings = <&kp EXCLAMATION>; }; // . + / = !
     };
 
     behaviors {
